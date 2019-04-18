@@ -17,6 +17,7 @@ import model.Contacts;
 
 public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ContactsViewHolder> {
     Context mContext;
+    //data kata bata ayo track garna kp lagi
     List<Contacts> contactsList;
     public ContactsAdapter(Context mContext,List<Contacts> contactsList){
         this.mContext = mContext;
@@ -27,6 +28,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
     @Override
     public ContactsViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.contact,viewGroup, false);
+        //root false=root lai effect hunu vayena
 
         return new ContactsViewHolder(view);
     }
@@ -34,7 +36,9 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
     @Override
     public void onBindViewHolder(@NonNull ContactsViewHolder contactsViewHolder, int i) {
     Contacts contacts = contactsList.get(i);
-    ContactsViewHolder.img
+    //ContactsViewHolder.img
+        //data lai bind garna use huncha
+
     }
 
     @Override
